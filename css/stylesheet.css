@@ -1,0 +1,51 @@
+* {
+  background-color: gray;
+}
+h1 {
+  color: red;
+  background-color: lightcoral;
+}
+
+p {
+  color: green;
+  background-color: lightgreen;
+}
+
+.one {
+  color:blue;
+}
+
+.two {
+  color:green;
+}
+
+.three {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(73, 73, 9)
+}
+
+.four {
+  font-size:  1.4em;
+}
+
+.five {
+  border-color: bisque;
+  color: orange;
+}
+
+.six {
+  border-block-color: red;
+  color: brown;
+}
+
+.paragraph {
+  font-size: 1.9em;
+  color: rgb(163, 85, 11);
+  background-color: rgb(230, 65, 65);
+}
+ol {
+  width: 275px;
+  border: 3px solid rgb(27, 7, 136);
+  padding: 35px;
+  border-color: green yellow blueviolet silver;
+}
