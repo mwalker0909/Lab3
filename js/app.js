@@ -1,4 +1,5 @@
 'use strict';
+
 var score = 0
 
 var userName = prompt('Please tell us who you are!');
@@ -51,6 +52,22 @@ if (five.toLowerCase() === 'yes') {
 }    else  {
         alert('oh really? I can make some more for you if you think you can handle it,  ' + userName); 
 
-//} do I need this here or should i remove the } ???
-alert('Hey congradulations! You answered ' + score + ' correctly!');
-}
+} 
+alert('Sooo I want to play a game');
+var i = 4;
+
+
+do { 
+var answerOne =prompt('guess what number between one and ten i\'m thinking of');
+var guessAttempts = 0;
+}       if(parseInt(answerOne) === i);{
+        alert('congradulations! you got the answer!');
+        score++;
+}       else if (parseInt(answerOne) > 4);
+        alert('Oh man, you\'re too high! try something lower');
+}       else {
+        alert('ohhhh looks like you are too low. Try something higher');
+}while(answerOne !== i) 
+alert('Hey congradulations! You answered ' + score + ' correctly!'); 
+
+
