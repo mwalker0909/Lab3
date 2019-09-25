@@ -1,7 +1,8 @@
 'use strict';
 
-var score = 0
 
+var guessAttempts = 0;
+var score = 0
 var userName = prompt('Please tell us who you are!');
 
 alert( 'hello ' + userName + '! Welcome to my About Me html. Hope you enjoy it!');
@@ -53,21 +54,16 @@ if (five.toLowerCase() === 'yes') {
         alert('oh really? I can make some more for you if you think you can handle it,  ' + userName); 
 
 } 
-alert('Sooo I want to play a game');
-var i = 4;
-
-
-do { 
-var answerOne =prompt('guess what number between one and ten i\'m thinking of');
-var guessAttempts = 0;
-}       if(parseInt(answerOne) === i);{
-        alert('congradulations! you got the answer!');
-        score++;
-}       else if (parseInt(answerOne) > 4);
-        alert('Oh man, you\'re too high! try something lower');
-}       else {
-        alert('ohhhh looks like you are too low. Try something higher');
-}while(answerOne !== i) 
-alert('Hey congradulations! You answered ' + score + ' correctly!'); 
-
-
+ alert('Sooo I want to play a game');
+ var maxAttempts = 4;
+ var answer = 5;
+ var guessNumber =prompt('guess what number between one and ten i\'m thinking of');
+ for (var i=1; i<4; i++){
+        if (parseInt(guessNumber >answer)){
+                alert('sorry that number is too high! try again!');
+        }  else if(parseInt(guessNumber<answer)) {
+                alert('Opps, looks like that number is too low! Try again!');
+        }  else if (parseInt(guessNumber===answer)){
+                alert('Congradulations! You guessed my number!');
+        }
+};  
