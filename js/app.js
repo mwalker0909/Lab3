@@ -57,13 +57,33 @@ if (five.toLowerCase() === 'yes') {
  alert('Sooo I want to play a game');
  var maxAttempts = 4;
  var answer = 5;
- var guessNumber =prompt('guess what number between one and ten i\'m thinking of');
+ var questionSix =prompt('guess what number between one and ten i\'m thinking of');
  for (var i=1; i<4; i++){
-        if (parseInt(guessNumber >answer)){
-                alert('sorry that number is too high! try again!');
-        }  else if(parseInt(guessNumber<answer)) {
-                alert('Opps, looks like that number is too low! Try again!');
-        }  else if (parseInt(guessNumber===answer)){
+        if (parseInt(questionSix >answer)){
+                // console.log'sorry that number is too high! try again!';
+                alert('sorry that number is too high! try again! You now have' + (maxAttempts - i) + ' left');
+        }  else if(parseInt(questionSix<answer)) {
+                // console.log'Opps, looks like that number is too low! Try again!';
+                alert('Opps, looks like that number is too low! Try again! You now have' + (maxAttempts - i) + ' left');
+        }  else if (parseInt(questionSix===answer)){
+                // console.log'Congradulations! You guessed my number!';
                 alert('Congradulations! You guessed my number!');
         }
-};  
+}
+// This starts part number seven
+alert('alright! now we get to play one last game!');
+var sixAttemps = 6;
+var answers = [2,12,46];
+
+for(i=0; i<6;i++) {
+        if(parseInt(answers !== 2,12,46)) {
+                //console.log'Sorry! That's not the number I was thinking of!'
+                alert('Sorry! That\'s not a number I was thinking of! by the way, you have ' + (maxAttempts- i) + ' attempts remaining!');
+        }  else if(parseInt(answers === 2)) {
+                alert ('Hey you got it! great job!');
+        }  else if(parseInt(answers === 12)) {
+                alert ('Hey you got it! great job!');
+        }  else if(parseInt(answers === 46)) {
+                alert ('Hey you got it! great job!');
+        }
+}
