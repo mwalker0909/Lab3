@@ -154,29 +154,31 @@ var colors = ['red', 'white', 'blue'];
 var count = 0
 
 
+function gameThree(){
+  while(count < 6 ) {
+    var question = prompt('name that color');
+    var comment = false;        
+    for(var i=0; i<6; i++) {
+      if(question === colors[i]) {
+        comment = true;
+      }
 
-while(count < 6 ) {
-  var question = prompt('name that color');
-  var comment = false;        
-  for(var i=0; i<6; i++) {
-    if(question === colors[i]) {
-      comment = true;
     }
-
-  }
-  if( comment === true){
-    alert('congrats');
-    score++
-    break;
-  }
-  if(comment === false){
-    alert('sorry, try again');
-    count++;
-    if (count === 6) {
-      alert('sorry, the right answers were red, white, or blue!');
+    if( comment === true){
+      alert('congrats');
+      score++
+      break;
+    }
+    if(comment === false){
+      alert('sorry, try again');
+      count++;
+      if (count === 6) {
+        alert('sorry, the right answers were red, white, or blue!');
+      }
     }
   }
 }
 alert('Hey you got '+ score + ' correct answers. great job!');
 gameOne();
 gameTwo();
+gameThree();
