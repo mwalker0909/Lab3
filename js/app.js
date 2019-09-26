@@ -61,25 +61,26 @@ var answer = 5;
 var isCorrect =false;
 var responseSix =parseInt(prompt('guess what number between one and ten i\'m thinking of. You have 4 tries!'));
 //  console.log(responseSix);
-for (var i=1; i<5; i++){
-  if (responseSix === answer){
+function gameTwo(){
+  for (var i=1; i<5; i++){
+    if (responseSix === answer){
     // console.log'Wow great guess! That is it!'
-    alert('Wow great guess! That is it!');
-    isCorrect = true;
-    score++;
-    alert('Hey you got '+ score + ' correct answers. great job!');
-    break;
+      alert('Wow great guess! That is it!');
+      isCorrect = true;
+      score++;
+      alert('Hey you got '+ score + ' correct answers. great job!');
+      break;
+    }
+    if(responseSix < answer) alert('Too low! Try something higher!');
+    if(responseSix > answer) alert('Too high! Try something lower!');
+    responseSix= parseInt(prompt('That\'s not it! Guess again'));
   }
-  if(responseSix < answer) alert('Too low! Try something higher!');
-  if(responseSix > answer) alert('Too high! Try something lower!');
-  responseSix= parseInt(prompt('That\'s not it! Guess again'));
-}
 
-if(!isCorrect) {
-  alert('Sorry, no more tries!');
-  alert('The correct answer was 5 by the way!');
+  if(!isCorrect) {
+    alert('Sorry, no more tries!');
+    alert('The correct answer was 5 by the way!');
+  }
 }
- 
 //  This begins question seven. I am going to leave this here as this was much of my work attempting to figure out how to loop propely
 //  In the future, I understand and will be deleting this much code. I am going to leave this here as proof of my work this time though. 
 
@@ -178,3 +179,4 @@ while(count < 6 ) {
 }
 alert('Hey you got '+ score + ' correct answers. great job!');
 gameOne();
+gameTwo();
