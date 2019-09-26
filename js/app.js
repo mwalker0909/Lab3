@@ -69,7 +69,6 @@ var responseSix =parseInt(prompt('guess what number between one and ten i\'m thi
 function gameTwo(){
   for (var i=1; i<5; i++){
     if (responseSix === answer){
-    // console.log'Wow great guess! That is it!'
       alert('Wow great guess! That is it!');
       isCorrect = true;
       score++;
@@ -105,6 +104,7 @@ function gameThree(){
     if( comment === true){
       alert('congrats');
       score++
+      alert('Hey you got '+ score + ' correct answers. great job!');
       break;
     }
     if(comment === false){
@@ -112,9 +112,9 @@ function gameThree(){
       count++;
       if (count === 6) {
         alert('sorry, the right answers were red, white, or blue!');
+        alert('Hey you got '+ score + ' correct answers. great job!');
       }
     }
   }
 }
-alert('Hey you got '+ score + ' correct answers. great job!');
 gameThree();
