@@ -1,8 +1,11 @@
 'use strict';
 
+ //<div class="box1" style = "margin-bottom: 0px"
 
-var guessAttempts = 0;
-var score = 0
+
+
+var score = 0;
+
 var userName = prompt('Please tell us who you are!');
 
 alert( 'hello ' + userName + '! Welcome to my About Me html. Hope you enjoy it!');
@@ -10,8 +13,7 @@ alert( 'hello ' + userName + '! Welcome to my About Me html. Hope you enjoy it!'
 var one = prompt('Are you grading this today?');
 
 if (one.toLowerCase() === 'yes') {
-        // console.log('great! Please let me know how I did!'); 
-        // I have used the comment on this log but I did alter the other console.logs into alerts. 
+
         alert( 'great! Please let me know how I did!');
         score++;
 }else  { 
@@ -53,16 +55,17 @@ if (five.toLowerCase() === 'yes') {
 }    else  {
         alert('oh really? I can make some more for you if you think you can handle it,  ' + userName); 
 
+
 } 
+
  alert('Sooo I want to play a game');
  
  var answer = 5;
  var isCorrect =false;
  var responseSix =parseInt(prompt('guess what number between one and ten i\'m thinking of. You have 4 tries!'));
-//  console.log(responseSix);
  for (var i=1; i<5; i++){
         if (responseSix === answer){
-                // console.log'Wow great guess! That is it!'
+
                 alert('Wow great guess! That is it!');
                 isCorrect = true;
                 score++;
@@ -78,75 +81,6 @@ if (five.toLowerCase() === 'yes') {
         alert('Sorry, no more tries!');
         alert('The correct answer was 5 by the way!');
  }
- 
-//  This begins question seven. I am going to leave this here as this was much of my work attempting to figure out how to loop propely
-//  In the future, I understand and will be deleting this much code. I am going to leave this here as proof of my work this time though. 
-
-// var sixAttemps = 6;
-// var isAnswer =   [
-//         2,
-//         12,
-//         46
-// ];
-
-
-//  alert('alright! now we get to play one last game! I\'ll pick three numbers between one and fifty');
-//  var responseSeven =parseInt(prompt('Can you guess one of them? You only have six guesses this time!'));
- 
-//  for(i=1; i<6;i++) {
-//         if(isAnswer === false); {
-//                  alert('Sorry, that is not one of the numbers I was thinking of');
-// }       else if(isAnswer === true); {
-//                  alert('congradulations! That is one of the right answers!');
-//                 break;
-// }
-// }
-  
-// // var colors = ['red', 'white', 'blue'];
-// var comment;
-
-// for (var tries = 6; tries >= 0; --tries) {
-//         comment = prompt('what\'s you\'re fav color');
-//         for (var i = 0; i < colors.length; ++i) {
-//                 if (comment === colors[i]) {
-//                         alert('congrats!');
-//                         break;
-//                 } else {
-//                         alert('wrong!');
-//                 }
-
-//         }
-// }
-
-// while (tries > 0) {
-//         for (var i = 0; i < colors.length; ++i) {
-//                 if (comment === colors[i]) {
-//                         alert('congrats!');
-//                         break;
-//                 } else {
-//                         alert('wrong!');
-//                         prompt('what\'s you\'re fav color');
-//                         tries -= 1;
-//                 }
-//         }
-        
-// }
-
-
-// for (var i = 0; i < colors.length; ++i) {
-//         prompt('what\'s you\'re fav color');
-//         if (comment !== colors[i]) {
-//                         alert('wrong!');
-//                         while (tries >6) {
-//                         tries += 1;
-//                         }  
-//                 } else if (comment !== colors[i]) {
-//                         alert('wrong! The answer was either Red, White, or blue!');
-//                 } else {
-//                 alert('congrats!');
-//                 break;
-//         }
-// }
 
 var colors = ['red', 'white', 'blue'];
 var count = 0
@@ -154,7 +88,7 @@ var count = 0
 
 
 while(count < 6 ) {
-        var question = prompt('name that color');
+        var question = prompt('I\'m thinking of three colors. I will give you six guesses to pick one of them! give it your best shot!');
         var comment = false;        
         for(var i=0; i<6; i++) {
                 if(question === colors[i]) {
